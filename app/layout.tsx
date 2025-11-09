@@ -47,7 +47,7 @@ export default function RootLayout({
     <html lang="bn">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#3b80f5" />
+        <meta name="theme-color" content="#000000" />
         <link rel="icon" type="image/png" href="/nexsolution-logo.png" />
         <link rel="apple-touch-icon" href="/nexsolution-logo.png" />
         <link rel="shortcut icon" href="/nexsolution-logo.png" />
