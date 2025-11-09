@@ -2,8 +2,10 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function Header() {
+  const whatsappLink = "https://wa.me/8801631137868?text=আসসালামু%20আলাইকুম।%20স্যার্ভিসটি%20নিতে%20চাচ্ছি"
+
   return (
-    <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Image
@@ -15,8 +17,14 @@ export function Header() {
           />
           <span className="font-bold text-xl">Nexsolution</span>
         </div>
-        <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-          যোগাযোগ করুন
+        <Button 
+          size="sm" 
+          className="bg-primary text-primary-foreground hover:bg-primary/90 relative z-10 cursor-pointer"
+          asChild
+        >
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            যোগাযোগ করুন
+          </a>
         </Button>
       </div>
     </header>
