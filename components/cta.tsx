@@ -20,14 +20,10 @@ export function CTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Button size="lg" className="bg-[#25D366] text-primary-foreground hover:bg-[#25D366]/90 text-base px-8" asChild>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              এখনই অর্ডার করুন
+              হোয়াটসঅ্যাপ করুন
             </a>
           </Button>
-          <Button size="lg" variant="outline" className="text-base px-8 bg-transparent hover:bg-[#25D366]" asChild>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              যোগাযোগ করুন
-            </a>
-          </Button>
+  
         </div>
 
         <p className="text-sm text-muted-foreground">১০০% নিরাপদ • ১০০% রিয়েল look like ফলোয়ার • দ্রুত ডেলিভারি</p>

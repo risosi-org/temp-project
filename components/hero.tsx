@@ -16,18 +16,18 @@ export function Hero() {
           দ্রুত ফলোয়ার গ্রোথ, <span className="text-primary">দৃশ্যমান রেজাল্ট!</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-primary/80 max-w-2xl mx-auto leading-relaxed">
           আপনার বিসনেস  পেজ হোক আরও জনপ্রিয় ও বিশ্বাসযোগ্য — বাড়বে ফলোয়ার, বাড়বে ক্রেতাদের ট্রাস্ট।
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Button size="lg" className="bg-[#25D366] text-primary-foreground hover:bg-[#25D366]/90 text-base px-8" asChild>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              এখনই অর্ডার করুন
+              হোয়াটসঅ্যাপ করুন
             </a>
           </Button>
           <Button size="lg" variant="outline" className="text-base px-8 bg-transparent hover:bg-[#25D366]" asChild>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <a href="#pricing" className="scroll-smooth">
               আরও জানুন
             </a>
           </Button>
