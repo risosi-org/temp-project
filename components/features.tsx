@@ -10,7 +10,7 @@ const features = [
   {
     icon: Users,
     title: "রিয়েল লুক ফলোয়ার",
-    description: "১০০% রিয়েল look like অ্যাকাউন্ট এবং অ্যাক্টিভ ফলোয়ার",
+    description: "১০০% রিয়েল look like অ্যাকাউন্ট",
   },
   {
     icon: Shield,

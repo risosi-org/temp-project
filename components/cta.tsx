@@ -14,16 +14,16 @@ export function CTA() {
         </h2>
 
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          হাজার হাজার সন্তুষ্ট গ্রাহক ইতিমধ্যে Nexsolution ব্যবহার করে তাদের সোশ্যাল মিডিয়া প্রোফাইল গ্রো করছে। আপনিও যোগ দিন আজই!
+          হাজার হাজার সন্তুষ্ট গ্রাহক ইতিমধ্যে Nexsolution ব্যবহার করে তাদের সোশ্যাল মিডিয়া প্রোফাইল গ্রো করেছে। আপনিও যোগ দিন আজই!
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8" asChild>
+          <Button size="lg" className="bg-[#25D366] text-primary-foreground hover:bg-[#25D366]/90 text-base px-8" asChild>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               এখনই অর্ডার করুন
             </a>
           </Button>
-          <Button size="lg" variant="outline" className="text-base px-8 bg-transparent" asChild>
+          <Button size="lg" variant="outline" className="text-base px-8 bg-transparent hover:bg-[#25D366]" asChild>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               যোগাযোগ করুন
             </a>

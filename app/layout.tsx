@@ -1,48 +1,53 @@
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Nexsolution - দ্রুত ফলোয়ার গ্রোথ সমাধান',
-  description: 'আপনার পেজ হোক আরও জনপ্রিয় ও বিশ্বাসযোগ্য — বাড়বে ফলোয়ার, বাড়বে ক্রেতাদের ট্রাস্ট। দ্রুত ফলোয়ার গ্রোথ, দৃশ্যমান রেজাল্ট!',
-  keywords: ['ফলোয়ার', 'সোশ্যাল মিডিয়া', 'গ্রোথ', 'মার্কেটিং', 'Nexsolution'],
-  authors: [{ name: 'Nexsolution' }],
-  creator: 'Nexsolution',
-  publisher: 'Nexsolution',
+  title: "Nexsolution - দ্রুত ফলোয়ার গ্রোথ সমাধান",
+  description:
+    "আপনার পেজ হোক আরও জনপ্রিয় ও বিশ্বাসযোগ্য — বাড়বে ফলোয়ার, বাড়বে ক্রেতাদের ট্রাস্ট। দ্রুত ফলোয়ার গ্রোথ, দৃশ্যমান রেজাল্ট!",
+  keywords: ["ফলোয়ার", "সোশ্যাল মিডিয়া", "গ্রোথ", "মার্কেটিং", "Nexsolution"],
+  authors: [{ name: "Nexsolution" }],
+  creator: "Nexsolution",
+  publisher: "Nexsolution",
   openGraph: {
-    type: 'website',
-    locale: 'bn_BD',
-    title: 'Nexsolution - দ্রুত ফলোয়ার গ্রোথ সমাধান',
-    description: 'আপনার পেজ হোক আরও জনপ্রিয় ও বিশ্বাসযোগ্য — বাড়বে ফলোয়ার, বাড়বে ক্রেতাদের ট্রাস্ট।',
-    siteName: 'Nexsolution',
+    type: "website",
+    locale: "bn_BD",
+    title: "Nexsolution - দ্রুত ফলোয়ার গ্রোথ সমাধান",
+    description:
+      "আপনার পেজ হোক আরও জনপ্রিয় ও বিশ্বাসযোগ্য — বাড়বে ফলোয়ার, বাড়বে ক্রেতাদের ট্রাস্ট।",
+    siteName: "Nexsolution",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Nexsolution - দ্রুত ফলোয়ার গ্রোথ সমাধান',
-    description: 'আপনার পেজ হোক আরও জনপ্রিয় ও বিশ্বাসযোগ্য — বাড়বে ফলোয়ার, বাড়বে ক্রেতাদের ট্রাস্ট।',
+    card: "summary_large_image",
+    title: "Nexsolution - দ্রুত ফলোয়ার গ্রোথ সমাধান",
+    description:
+      "আপনার পেজ হোক আরও জনপ্রিয় ও বিশ্বাসযোগ্য — বাড়বে ফলোয়ার, বাড়বে ক্রেতাদের ট্রাস্ট।",
   },
   icons: {
     icon: [
       {
-        url: '/nexsolution-logo.png',
-        sizes: '32x32',
-        type: 'image/png',
+        url: "/nexsolution-logo.png",
+        sizes: "32x32",
+        type: "image/png",
       },
     ],
-    apple: '/nexsolution-logo.png',
-    shortcut: '/nexsolution-logo.png',
+    apple: "/nexsolution-logo.png",
+    shortcut: "/nexsolution-logo.png",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
+  const whatsappLink =
+    "https://wa.me/8801631137868?text=আসসালামু%20আলাইকুম।%20স্যার্ভিসটি%20নিতে%20চাচ্ছি";
   return (
     <html lang="bn">
       <head>
@@ -53,9 +58,11 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/nexsolution-logo.png" />
       </head>
       <body className={`font-sans antialiased`}>
-        {children}
-        <Analytics />
+        <a href={whatsappLink}>
+          {children}
+          <Analytics />
+        </a>
       </body>
     </html>
-  )
+  );
 }

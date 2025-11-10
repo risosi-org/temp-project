@@ -87,7 +87,7 @@ export function Pricing() {
             <Button
               className={`w-full ${
                 plan.popular
-                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  ? "bg-[#25D366] text-primary-foreground hover:bg-[#25D366]/90"
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               }`}
               asChild

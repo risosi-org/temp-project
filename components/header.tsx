@@ -19,7 +19,7 @@ export function Header() {
         </div>
         <Button 
           size="sm" 
-          className="bg-primary text-primary-foreground hover:bg-primary/90 relative z-10 cursor-pointer"
+          className="bg-[#25D366] text-primary-foreground hover:bg-[#25D366]/90 relative z-10 cursor-pointer"
           asChild
         >
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
