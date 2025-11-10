@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { FacebookPixel } from "@/components/facebook-pixel";
 import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -58,6 +60,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/nexsolution-logo.png" />
       </head>
       <body className={`font-sans antialiased`}>
+        <Suspense fallback={null}>
+          <FacebookPixel />
+        </Suspense>
         <a href={whatsappLink}>
           {children}
           <Analytics />
