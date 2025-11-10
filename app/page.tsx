@@ -1,4 +1,5 @@
 import { Hero } from "@/components/hero"
+import { HighlightSection } from "@/components/highlight-section"
 import { Features } from "@/components/features"
 import { Pricing } from "@/components/pricing"
 import { CTA } from "@/components/cta"
@@ -9,6 +10,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <HighlightSection />
       <Features />
       <Pricing />
       <CTA />
