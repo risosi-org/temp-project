@@ -23,7 +23,7 @@ export function Header() {
           asChild
         >
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            যোগাযোগ করুন
+            হোয়াটসঅ্যাপ করুন
           </a>
         </Button>
       </div>

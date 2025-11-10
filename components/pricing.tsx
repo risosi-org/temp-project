@@ -43,7 +43,7 @@ export function Pricing() {
   const whatsappLink = "https://wa.me/8801631137868?text=আসসালামু%20আলাইকুম।%20স্যার্ভিসটি%20নিতে%20চাচ্ছি"
 
   return (
-    <section className="container mx-auto px-4 py-20 md:py-32">
+    <section id="pricing" className="container mx-auto px-4 py-20 md:py-32 scroll-mt-20">
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">
           আপনার জন্য <span className="text-primary">সঠিক প্যাকেজ</span> খুঁজে নিন
